@@ -1,0 +1,9 @@
+{
+
+"item.potion_pill.empty_arcane_ingot":"空白符文锭",
+
+"item.potion_pill.frost_nova_ingot":"霜星之锭",
+"tooltip.potion_pill.frost_nova_ingot.text": "以霜星的外形为参考制作而成，可以用于制作Tetra工具。",
+
+"item_group.potion_pill.tab":"更多Tetra材料"
+}
