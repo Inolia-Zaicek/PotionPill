@@ -4,6 +4,11 @@ package com.inolia_zaicek.potion_pill;
 
 import com.inolia_zaicek.potion_pill.Event.NonPlayerPillEvent;
 import com.inolia_zaicek.potion_pill.Event.Pill.*;
+import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Damage.AttackUpPillEffectEvent;
+import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Damage.PowerUpPillEffectEvent;
+import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Damage.StrongPillEffectEvent;
+import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Heal.VmpirePillEffectEvent;
+import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Resistance.*;
 import com.inolia_zaicek.potion_pill.Event.PillMakerInteractionEvent; // 新增导入
 import com.inolia_zaicek.potion_pill.Register.PotionPillBlockRegister;
 import com.inolia_zaicek.potion_pill.Register.PotionPillEffectsRegister;
@@ -58,6 +63,22 @@ public class PotionPill {
         MinecraftForge.EVENT_BUS.register(new WardPillEffectEvent());
         MinecraftForge.EVENT_BUS.register(new FrostspiritPillEffectEvent());
         MinecraftForge.EVENT_BUS.register(new ZephyrPillEffectEvent());
+        //
+        MinecraftForge.EVENT_BUS.register(new AttackUpPillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new PowerUpPillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new StrongPillEffectEvent());
+
+        MinecraftForge.EVENT_BUS.register(new ArrowResistancePillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new ExplosionResistancePillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new FreezeResistancePillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new HoldBreathPillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new LavaResistancePillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new LightBodyPillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new ThunderResistancePillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new VoidResistancePillEffectEvent());
+
+        MinecraftForge.EVENT_BUS.register(new VmpirePillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new VoidResistancePillEffectEvent());
     }
 
     @SubscribeEvent

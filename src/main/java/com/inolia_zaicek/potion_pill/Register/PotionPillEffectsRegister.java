@@ -62,4 +62,8 @@ public class PotionPillEffectsRegister {
     public static final RegistryObject<MobEffect> LavaResistancePill = INOEFFECT.register("lava_resistance_pill", LavaResistancePillEffect::new);
     public static final RegistryObject<MobEffect> ThunderResistancePill = INOEFFECT.register("thunder_resistance_pill", ThunderResistancePillEffect::new);
     public static final RegistryObject<MobEffect> VoidResistancePill = INOEFFECT.register("void_resistance_pill", VoidResistancePillEffect::new);
+
+    public static final RegistryObject<MobEffect> HealPill = INOEFFECT.register("heal_pill", NoSpecialPillEffect::new);
+    public static final RegistryObject<MobEffect> VampirePill = INOEFFECT.register("vampire_pill", NoSpecialPillEffect::new);
+    public static final RegistryObject<MobEffect> DamageAbsorptionPill = INOEFFECT.register("damage_absorption_pill", NoSpecialPillEffect::new);
 }
