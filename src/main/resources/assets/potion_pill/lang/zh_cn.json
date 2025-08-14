@@ -240,8 +240,8 @@
 "message.potion_pill.target_pill.buff_level_full":"目标已经吃不下了",
 
 "item.potion_pill.heal_pill":"回气丹",
-"tooltip.potion_pill.heal_up_pill.text":"§6[中品丹药]§7仅可对非玩家实体使用，最多可使用5次。使用后令目标实体获得[回气]效果：每秒回复buff等级*1%%的生命值。",
-"effect.potion_pill.heal_up_pill": "回气",
+"tooltip.potion_pill.heal_pill.text":"§6[中品丹药]§7仅可对非玩家实体使用，最多可使用5次。使用后令目标实体获得[回气]效果：每秒回复buff等级*1%%的生命值。",
+"effect.potion_pill.heal_pill": "回气",
 "item.potion_pill.vampire_pill":"噬血丹",
 "tooltip.potion_pill.vampire_pill.text":"§4[上品丹药]§7仅可对非玩家实体使用，最多可使用5次。使用后令目标实体获得[噬血]效果：攻击将回复所造成伤害5%数额的生命值。",
 "effect.potion_pill.vampire_pill": "噬血",

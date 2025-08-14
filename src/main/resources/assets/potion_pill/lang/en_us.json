@@ -221,5 +221,15 @@
 "message.potion_pill.target_pill.usage_fail": "This isn't meant for personal consumption...",
 "message.potion_pill.target_pill.buff_level_full": "The target has reached their limit",
 
+"item.potion_pill.heal_pill": "Healing Pill",
+"tooltip.potion_pill.heal_pill.text": "§6[Mid-Tier Elixir]§7 Can only be used on non-player entities (max 5 uses). Grants the [Healing] effect: restores §e1%%§7 of max health per second multiplied by the buff level.",
+"effect.potion_pill.heal_pill": "Healing",
+"item.potion_pill.vampire_pill": "Vampire Pill",
+"tooltip.potion_pill.vampire_pill.text": "§4[High-Tier Elixir]§7 Can only be used on non-player entities (max 5 uses). Grants the [Vampire] effect: restores §e5%%§7 of damage dealt as health when attacking.",
+"effect.potion_pill.vampire_pill": "Vampire",
+"item.potion_pill.damage_absorption_pill": "Damage Absorption Pill",
+"tooltip.potion_pill.damage_absorption_pill.text": "§4[High-Tier Elixir]§7 Can only be used on non-player entities (max 5 uses). Grants the [Damage Absorption] effect: restores §e5%%§7 of damage taken as health.",
+"effect.potion_pill.damage_absorption_pill": "Damage Absorption",
+
 "item_group.potion_pill.tab": "Potions & Pills"
 }

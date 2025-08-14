@@ -208,6 +208,15 @@ public class PotionPillItemRegister {
             // 药水效果，最大等级-1
             () -> new MobEffectInstance(PotionPillEffectsRegister.VoidResistancePill.get(), -1, 0),4));
 
+    public static final RegistryObject<Item> HealPill = registerCommonMaterials(ZeroingITEM, "heal_pill", () -> new TargetedPotionPillItem(new Item.Properties().stacksTo(64),
+            // 药水效果，最大等级-1
+            () -> new MobEffectInstance(PotionPillEffectsRegister.HealPill.get(), -1, 0),4));
+    public static final RegistryObject<Item> VampirePill = registerCommonMaterials(ZeroingITEM, "vampire_pill", () -> new TargetedPotionPillItem(new Item.Properties().stacksTo(64),
+            // 药水效果，最大等级-1
+            () -> new MobEffectInstance(PotionPillEffectsRegister.VampirePill.get(), -1, 0),4));
+    public static final RegistryObject<Item> DamageAbsorptionPill = registerCommonMaterials(ZeroingITEM, "damage_absorption_pill", () -> new TargetedPotionPillItem(new Item.Properties().stacksTo(64),
+            // 药水效果，最大等级-1
+            () -> new MobEffectInstance(PotionPillEffectsRegister.DamageAbsorptionPill.get(), -1, 0),4));
 
 
     public PotionPillItemRegister(){

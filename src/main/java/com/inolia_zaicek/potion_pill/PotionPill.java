@@ -7,6 +7,7 @@ import com.inolia_zaicek.potion_pill.Event.Pill.*;
 import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Damage.AttackUpPillEffectEvent;
 import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Damage.PowerUpPillEffectEvent;
 import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Damage.StrongPillEffectEvent;
+import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Heal.DamageAbsorptionPillEffectEvent;
 import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Heal.VmpirePillEffectEvent;
 import com.inolia_zaicek.potion_pill.Event.Pill.NonPlayer.Resistance.*;
 import com.inolia_zaicek.potion_pill.Event.PillMakerInteractionEvent; // 新增导入
@@ -78,7 +79,7 @@ public class PotionPill {
         MinecraftForge.EVENT_BUS.register(new VoidResistancePillEffectEvent());
 
         MinecraftForge.EVENT_BUS.register(new VmpirePillEffectEvent());
-        MinecraftForge.EVENT_BUS.register(new VoidResistancePillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new DamageAbsorptionPillEffectEvent());
     }
 
     @SubscribeEvent
