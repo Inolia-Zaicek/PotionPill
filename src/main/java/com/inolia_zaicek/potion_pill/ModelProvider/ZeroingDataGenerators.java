@@ -27,7 +27,7 @@ public class ZeroingDataGenerators {
 
         //添加生成对应文件的生成器
         //第一个参数表示在客户端还是服务端，这里我们选择客户端，第二个传进一个生成的对象，就是我们之前自己写的类
-        generator.addProvider(event.includeClient(),new ZeroingModItemModelGen(output,helper));
-        generator.addProvider(event.includeClient(),new ZeroingModRecipesGen(output));
+        //generator.addProvider(event.includeClient(),new ZeroingModItemModelGen(output,helper));
+        //generator.addProvider(event.includeClient(),new ZeroingModRecipesGen(output));
     }
 }

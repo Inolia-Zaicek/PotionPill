@@ -2,8 +2,13 @@ package com.inolia_zaicek.potion_pill;
 
 // import com.inolia_zaicek.daily_delight.Curios.BentoBox.WoodenBentoBoxCurios; // This class might be removed or adapted if you fully replace it
 
+import com.inolia_zaicek.potion_pill.Event.NonPlayerPillEvent;
+import com.inolia_zaicek.potion_pill.Event.Pill.*;
+import com.inolia_zaicek.potion_pill.Event.PillMakerInteractionEvent; // 新增导入
+import com.inolia_zaicek.potion_pill.Register.PotionPillBlockRegister;
 import com.inolia_zaicek.potion_pill.Register.PotionPillEffectsRegister;
 import com.inolia_zaicek.potion_pill.Register.PotionPillItemRegister;
+import com.inolia_zaicek.potion_pill.Register.PotionPillRecipe;
 import com.inolia_zaicek.potion_pill.Register.PotionPillTab;
 import com.mojang.logging.LogUtils;
 import net.minecraft.data.DataGenerator;
@@ -36,14 +41,23 @@ public class PotionPill {
         //注册卷轴
         PotionPillTab.register(bus);
         PotionPillItemRegister.register(bus);
+        PotionPillBlockRegister.register(bus);
         PotionPillEffectsRegister.INOEFFECT.register(bus);
+        PotionPillRecipe.SERIALIZERS.register(bus); // 注册配方序列化器
         MinecraftForge.EVENT_BUS.register(this);
+        // 新增：注册方块交互事件处理器
+        MinecraftForge.EVENT_BUS.register(new PillMakerInteractionEvent()); // 修改为实例化对象
+        MinecraftForge.EVENT_BUS.register(new NonPlayerPillEvent());
         // 注册 FML 生命周期事件
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
         //监听事件
-        //MinecraftForge.EVENT_BUS.register(new Duel());
-        //MinecraftForge.EVENT_BUS.register(Duel.class);
+        MinecraftForge.EVENT_BUS.register(new DragonPowerPillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new ChillheartPillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new IronhidePillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new WardPillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new FrostspiritPillEffectEvent());
+        MinecraftForge.EVENT_BUS.register(new ZephyrPillEffectEvent());
     }
 
     @SubscribeEvent

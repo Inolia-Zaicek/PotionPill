@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "potion_pill:item/potion_pill_paper",
+    "layer1": "potion_pill:item/potion_pill"
+  }
+}

@@ -25,7 +25,7 @@ public class TooltipItem extends Item {
         {
             // 鼠标经过时的默认文本
             // 翻译键格式: tooltip.<你的ModID>.<物品ID>_text
-            pTooltipComponents.add(Component.translatable("tooltip." + "more_mod_tetra" + "." + itemName + ".text")
+            pTooltipComponents.add(Component.translatable("tooltip." + "potion_pill" + "." + itemName + ".text")
                     .withStyle(style -> style.withColor(TextColor.fromRgb(0xA0A0A0))));
         }
 
